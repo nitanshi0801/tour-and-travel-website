@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+    <style>
+        
+body{
+       background-image: url('33.jpg');
+       background-size: cover;
+}
+.book{
+    text-align: center;
+    color: rgb(49, 7, 237);
+    padding: 3vh;
+    margin-left: 380px;
+    width: 697px;
+    padding-top: 0%;
+    margin-top: 0%;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+header { 
+    padding: 2px;
+    background-color: rgb(233, 214, 5);
+}
+p{
+    color: rgb(240, 8, 8);
+    font-size: 30px;
+    padding-top: 0 px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#bod {
+    background-color: rgb(162, 30, 98);
+    text-align: left;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-size: 35px;
+    line-height: 90px;
+    padding-left: 120px;
+    color: rgb(33, 2, 42);
+
+   
+}
+#bod p{
+    color: black;
+}
+#bod input{
+    font-size: 15px;
+    height: 40px;
+}
+button{
+    font-size: 30px;
+    border-radius: 15px;
+    background-color: rgb(51, 216, 9);
+    cursor: pointer;
+    margin-left: 200px;
+}
+button:hover{
+    background-color: rgb(231, 205, 9);
+}
+    </style>
+</head>
+<body>
+    <form action="book.php"  method="POST">
+        <div class="book">
+            <header>
+        <h1>BOOKING FORM</h1>
+        <p>Please fill the details correctly</p>
+        </header>
+        </div>
+        <div id="bod">
+              NAME : 
+              <input type="text" name="name" required ><br>
+             ADDHAR CARD No : 
+                <input type="text" name="adhar" required><br>
+              GENDER : <input type="checkbox" id="gender" name="gender" value="Male">
+              <label for="gender">Male</label>
+              <input type="checkbox" id="gender" name="gender" value="Female">
+              <label for="gender"> Female</label><br>
+            ADDRESS: <textarea  id="address" name="address" required></textarea><br>
+            PINCODE: <input type="text" name="pincode" id="number" required> <br>
+            MOBILE No.: <input type="text" name="mobileno" id="number" required> <br>
+            EMAIL:  <input type="email" name="email" id="email" required><br>
+            ARRIVING DATE: <input type="date"name="arrivedate"required><br>
+              DEPARTURE DATE: <input type="date" name="departdate" required><br>
+              TOTAL MEMBER : <input type="text" name="member" required> <br>
+            SELECT PACKAGE : 
+              <select id="package" name="package"  required>
+                <option value="United kingdom">United kingdom</option>
+                <option value="France">France</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Italy">Italy</option>
+                <option value="India">India</option>
+                <option value="United states">United states</option>
+              </select>
+                              <br>
+                  <button>Submit</button>
+            </div>
+</form>
+</body>
+</html>

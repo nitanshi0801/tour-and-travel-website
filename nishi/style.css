@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Navbar Start */
+#navbar{
+    background: #f9f9f9;
+}
+
+#leftlogo{
+    padding: 0px;
+    margin: 0px;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 3px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 5px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+.btn1{
+    background: orange;
+    color: rgb(21, 21, 21);
+    border-color : rgb(13, 13, 13);
+    background-color: rgb(252, 157, 4);
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    }
+.btn2{
+    background-color:rgb(252, 157, 4);
+    color: rgb(11, 11, 11);
+    border-color  : black;
+    margin-right: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    
+    }
+    .btn1:hover{
+        background-color: yellowgreen;
+    }
+    .btn2:hover{
+        background-color: rgb(241, 241, 6);
+    }
+
+/* Navbar End */
+
+/* Home Section Start */
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1.2;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: rgb(80, 27, 58);
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: rgb(230, 233, 229);
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #cd2020;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Maldives";}
+    60%{content: "Italy";}
+    70%{content: "Turkey";}
+    80%{content: "Mexico";}
+    90%{content: "Germany";}
+    100%{content: "United kingdom";}
+} 
+.home .content p{
+    color:yellow;
+    font-size: 29px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px rgb(9, 8, 8);
+    margin-bottom: 30px;
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 20px;
+    }
+}
+/* Home Section End */
+
+/* Section Book Start */
+
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 5px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+.activities{
+    margin-top: 50px;
+}
+.activities.activity{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.activities .activity img{
+    border-radius: 10px;
+     transition: all 0.7s ease-in-out; 
+    padding: 20px;
+    
+}
+.activities .activity img:hover{
+    /* transform: scale(1.2); */
+    /* transform: skew(360deg); */
+    transform: rotate(360deg);
+}
+
+/* Section Book End */
+
+
+
+
+
+/* Section Packages Start */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+    font-family:cursive;
+    color: rgb(74, 20, 29);
+    font-weight: 500;
+    
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+/* Section Packages End */
+
+
+
+
+/* Section Services Start */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+    background-image: url("./images/17257236.jpg");
+    height: 550px;
+}
+.services .card{
+    box-shadow: rgba(199, 7, 7, 0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #1e713c;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+    text-align: center;
+    color: rgb(91, 12, 91);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.services .card .card-body p{
+    text-align: center;
+    color: rgb(91, 12, 91);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Section Services End */
+
+
+
+
+
+/* Section Gallary Start */
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out; 
+    padding: 20px;
+}
+.gallary .card img:hover{
+    transform: scale(1.2);
+}
+/* .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px; 
+}*/
+/* Section Gallary End */
+
+
+
+
+/* About Start */
+.about{
+    padding: 20px;
+    margin-top: 40px;
+    background: #f9f9f9;
+    background-image: url("./images/mm.jpg");
+    background-size: cover;
+    height: 550px;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+    height: 300px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #f9f9f9;
+    font-family:Arial, Helvetica, sans-serif
+}
+.about p{
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#more 
+{ 
+    display: none;
+}
+ 
+
+
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+/* About End */
+
+
+
+
+/* Footer Start */
+#footer{
+    /* background-image: url("dd.jpeg"); */
+    width: 100%;
+    /* margin-top: 150px; */
+    text-align: center;
+    background-size: cover;
+    background-color: black;
+    color: white;
+    
+    
+}
+
+
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links a{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links a:hover{
+    background: #a3f205;
+}
+.copyright p{
+    color: #eac408;
+}
+/* Footer End */
